@@ -118,7 +118,7 @@ footer {
 }
 
 .logo {
-  width: 35vw;
+  width: max(125px, 28vw);
   height: auto;
   margin-top: 1.5em;
   margin-bottom: 3em;
@@ -188,5 +188,78 @@ footer {
 
 /**************** BEGIN Desktop Styles ****************/
 @media screen and (min-width: 800px) {
+  body {
+    padding: 0 80px;
+    background-image: url(/images/bg-desktop.svg);
+  }
+  main {
+    grid-template-areas:
+      "mockup tagline"
+      "mockup content"
+      "mockup register"
+      "mockup .";
+    justify-items: left;
+    grid-template-columns: 700px 1fr;
+  }
+  footer {
+    grid-area: footer;
+    display: grid;
+    justify-items: right;
+    max-width: 1280px;
+  }
+
+  .logo {
+    width: 220px;
+    margin-top: 2.6em;
+  }
+  .mockup {
+    grid-area: mockup;
+    width: 100%;
+    height: auto;
+    margin-top: 1.3em;
+  }
+  .tagline {
+    grid-area: tagline;
+    max-width: 19ch;
+    margin-top: 1.7em;
+    margin-left: 50px;
+    text-align: left;
+    font-size: 4rem;
+  }
+  .content {
+    grid-area: content;
+    width: 100%;
+    margin-top: 1.1em;
+    margin-left: 50px;
+    margin-bottom: 1.3em;
+    text-align: left;
+    font-size: 1.8rem;
+    max-width: 50ch;
+  }
+  .register {
+    grid-area: register;
+    width: 100%;
+    text-align: left;
+  }
+  .btn-register {
+    width: 200px;
+    height: 56px;
+    margin-top: 0;
+    margin-left: 50px;
+    border-radius: 28px;
+    font-size: 1.8rem;
+  }
+
+  .social-nav {
+    font-size: 1.8rem;
+    margin-top: 1.8em;
+    margin-bottom: 5em;
+  }
+
+  .social-nav__link {
+    width: 2.2em;
+    height: 2.2em;
+    margin: 0 0.5em;
+  }
 }
 /**************** END Desktop Styles ****************/
