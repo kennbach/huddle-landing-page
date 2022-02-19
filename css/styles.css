@@ -88,7 +88,7 @@ body {
   line-height: 1.5;
   color: var(--color-white);
   background: no-repeat;
-  background-image: url("../images/bg-mobile.svg");
+  background-image: url("../images/bg-desktop.svg");
   background-color: var(--color-primary);
   background-blend-mode: hard-light;
 }
@@ -190,7 +190,7 @@ footer {
 @media screen and (min-width: 800px) {
   body {
     padding: 0 80px;
-    background-image: url(../images/bg-desktop.svg);
+    background-image: url("../images/bg-desktop.svg");
   }
   main {
     grid-template-areas:
