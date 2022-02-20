@@ -45,7 +45,7 @@ Desktop
 - CSS
 - CSS Variables
 - CSS Grid
-- Desktop-first workflow
+- Mobile-First workflow
 - Accessibility Aware
 
 ### What I learned
